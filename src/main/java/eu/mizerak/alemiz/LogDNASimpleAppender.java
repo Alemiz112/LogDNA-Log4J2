@@ -54,7 +54,9 @@ public class LogDNASimpleAppender extends AbstractAppender {
 
     @Override
     public void append(LogEvent logEvent) {
-        if(logEvent.getLevel().intLevel() <= this.minimalLogLevel.intLevel()) return;
+        if(logEvent.getLevel().intLevel() < this.minimalLogLevel.intLevel()) {
+            return;
+        }
 
         Layout<? extends Serializable> layout = this.getLayout();
         String message = new String(layout.toByteArray(logEvent));
