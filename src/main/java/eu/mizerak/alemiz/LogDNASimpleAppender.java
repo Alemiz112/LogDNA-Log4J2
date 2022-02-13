@@ -54,7 +54,7 @@ public class LogDNASimpleAppender extends AbstractAppender {
 
     @Override
     public void append(LogEvent logEvent) {
-        if(logEvent.getLevel().intLevel() < this.minimalLogLevel.intLevel()) {
+        if(logEvent.getLevel().intLevel() > this.minimalLogLevel.intLevel()) {
             return;
         }
 
