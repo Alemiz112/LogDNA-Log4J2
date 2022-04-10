@@ -18,11 +18,11 @@
     <distributionManagement>
         <repository>
             <id>central</id>
-            <url>https://repo.mizerak.eu/artifactory/main</url>
+            <url>https://repo.mznt.eu/artifactory/main</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>https://repo.mizerak.eu/artifactory/snapshots/</url>
+            <url>https://repo.mznt.eu/artifactory/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
